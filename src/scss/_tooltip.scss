@@ -1,0 +1,26 @@
+// Tooltips
+
+.tooltipWrapper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 27px;
+    height: 27px;
+    a {
+        content: "";
+        background: url(../img/tooltip-normal.svg) no-repeat top right;
+        display: block;
+        width: 27px;
+        height: 27px;
+        &:hover {
+            background: url(../img/tooltip-hover.svg) no-repeat top right;
+        }
+    }
+}
+.tooltip-inner {
+    text-align: left;
+    line-height: 1.250rem;
+    font-size: .813rem;
+    padding: .813rem 1rem;
+}

@@ -1,0 +1,59 @@
+// Global Header
+
+/*.globalHeader {
+    background-color: $bga-blue;
+    min-height: 66px;
+    border-bottom: 3px solid $site-yellow-tint1;
+    padding: 13px 0 10px 0;
+}*/
+.globalHeaderSub {
+    min-height: 98px;
+    .bgaReturn {
+        height: 32px;
+        background-color: $navy;
+        padding-top: 10px;
+        .bgaLogo {
+            height: 14px;
+            padding: 0;
+            vertical-align: top;
+        }
+    }
+}
+.serviceHeader {
+    background-color: $bga-blue;
+    min-height: 76px;
+    padding-top: 16px;
+    border-bottom: 3px solid $bga-yellow;
+}
+.mainMenu {
+    min-height: 32px;
+}
+.crest {
+  display: none;
+}
+.mobcrest {
+  height: 44px;
+  overflow: visible;
+}
+#accountWrapper {
+  display: none;
+}
+
+
+// Responsive (medium and up)
+@include media-breakpoint-up(sm) {
+    .serviceHeader {
+        min-height: 100px;
+        padding-top: 26px;
+        border-bottom: 4px solid $bga-yellow;
+    }
+    #accountWrapper {
+        display: block;
+        a {
+        padding: 0 0.5rem;
+        }
+    }
+    .bgaReturn {
+        text-align: center;
+    }
+}

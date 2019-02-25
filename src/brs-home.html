@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Business Registration Service">
+  <meta name="author" content="E.J. Sephora">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+  <title>Business Registration Service</title>
+</head>
+
+<body class="brs">
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div id="dismiss">
+        <span>Close <i class="fas fa-arrow-left"></i></span>
+      </div>
+
+      <div class="sidebar-header">
+
+      </div>
+
+      <ul class="list-unstyled components">
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+          <!--<ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Home 1</a>
+            </li>
+            <li>
+              <a href="#">Content Page</a>
+            </li>
+            <li>
+              <a href="tax-registrations.html">Tax Registration</a>
+            </li>
+          </ul>-->
+        </li>
+        <li>
+          <a href="#">About</a>
+          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="tax-registrations.html">Tax Registration</a>
+        </li>
+        <li>
+          <a href="index.html">Back to Playground</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+      <main role="main">
+        <header class="globalHeaderSub">
+
+          <!-- BGA Global Ribbon -->
+          <div class="bgaReturn container-fluid">
+            <a href="https://www.business.gov.au/"><img class="bgaLogo" src="public/img/bga-mobile-logo.svg"></a>
+          </div>
+
+          <!-- Service Ribbon -->
+          <div class="serviceHeader">
+            <div class="text-sm-center container-fluid">
+              <button type="button" id="sidebarCollapse" class="btn btn-menu">
+                <i class="fas fa-align-left"></i>
+                <span>Menu</span>
+              </button>
+              <a href="index.html"><img class="mobcrest" src="public/img/brs-logo-mobile.svg"></a>
+            </div>
+          </div>
+
+          <!-- Mobile Navigation - fixed to bottom -->
+          <div id="mobileNav" class="fixed-bottom">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bga-nav p-4">
+                <ul class="nav navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Frequently asked questions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="alert" class="nav-link" href="#">Is JQuery working?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Do I need an ABN?</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="navbar bga-navbar">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuOne" aria-controls="navbarToggleMenuOne"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-comments"></i></span>
+                <span class="label">Chat</span>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuTwo" aria-controls="navbarToggleMenuTwo"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-question-circle"></i></span>
+                <span class="label">Help</span>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuThree" aria-controls="navbarToggleMenuThree"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-toolbox"></i></span>
+                <span class="label">Services</span>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleMenuFour" aria-controls="navbarToggleMenuFour"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span class="label">Sign in</span>
+              </button>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon"><i class="fas fa-align-left"></i></span>
+                <span class="label">More</span>
+              </button>
+            </nav>
+          </div>
+          <!-- End Mobile Navigation -->
+
+        </header>
+
+
+        <div class="content container">
+          <div id="headingHome" class="pageheader">
+            <h1 class="mt-5 mb-3">
+              <span class="preHeading mb-2">Welcome to the Australian Government
+            <br>
+          </span>
+              <span class="mainHeading">Business Registration Service</span>
+            </h1>
+            <p class="lead">The official place to apply for your ABN, GST, AUSkey and more</p>
+          </div>
+
+          <div id="actionTiles" class="actionTiles">
+            <div class="row mb-2">
+              <div class="col-md-8 order-1">
+                <div class="card primarycard flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h3 class="mb-5">
+                      <a class="text-dark" href="#">Apply for an ABN</a>
+                    </h3>
+                    <div class="lowdown">
+                      <p class="card-text">and other registrations all at once</p>
+                      <a class="card-cta" href="#">Apply now
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 21.68 11.76" class="cta-arrow">
+                        <polygon class="a" points="21.68 5.87 15.81 0 14.5 1.31 18.14 4.96 0 4.96 0 6.79 18.16 6.79 14.5 10.45 15.81 11.76 21.68 5.89 21.67 5.88 21.68 5.87"
+                        />
+                      </svg>
+                    </a>
+                    </div>
+                    <div id="tooltipWrapper" class="tooltipWrapper">
+                      <a id="ttApplyAbn" href="#" data-toggle="tooltip" data-placement="top" title="Put a really good explanation here about applying for an ABN and all the other stuff you can do. But keep it brief!"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 order-4 order-md-2">
+                <div class="card secondarycard flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h3 class="mb-5">
+                      <a class="text-dark" href="#">Resume or track your application</a>
+                    </h3>
+                    <div class="lowdown">
+                      <a class="card-cta" href="#">Sign in
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 21.68 11.76" class="cta-arrow">
+                          <polygon class="a" points="21.68 5.87 15.81 0 14.5 1.31 18.14 4.96 0 4.96 0 6.79 18.16 6.79 14.5 10.45 15.81 11.76 21.68 5.89 21.67 5.88 21.68 5.87"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div id="tooltipWrapper" class="tooltipWrapper">
+                      <a id="ttResumeApplication" href="#" data-toggle="tooltip" data-placement="top" title="If you've started an application but  you got distracted because ...reasons, sign in and continue"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 order-2 order-md-3">
+                <div class="card primarycard flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h3 class="mb-5">
+                      <a class="text-dark" href="tax-registrations.html">Register for GST and other tax roles</a>
+                    </h3>
+                    <div class="lowdown">
+                      <p class="card-text">including PAYG, FBT, LCT</p>
+                      <a href="tax-registrations.html" class="card-cta">Register now
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 21.68 11.76" class="cta-arrow">
+                          <polygon class="a" points="21.68 5.87 15.81 0 14.5 1.31 18.14 4.96 0 4.96 0 6.79 18.16 6.79 14.5 10.45 15.81 11.76 21.68 5.89 21.67 5.88 21.68 5.87"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div id="tooltipWrapper" class="tooltipWrapper">
+                      <a id="ttTaxRoles" href="#" data-toggle="tooltip" data-placement="top" title="Tax roles? What are tax roles? I don't know"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 order-3 order-md-4">
+                <div class="card primarycard flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h3 class="mb-5">
+                      <a class="text-dark" href="#">Register your business name</a>
+                    </h3>
+                    <div class="lowdown">
+                      <p class="card-text">Just need a business name?</p>
+                      <a class="card-cta" href="#">Get it here
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 21.68 11.76" class="cta-arrow">
+                        <polygon class="a" points="21.68 5.87 15.81 0 14.5 1.31 18.14 4.96 0 4.96 0 6.79 18.16 6.79 14.5 10.45 15.81 11.76 21.68 5.89 21.67 5.88 21.68 5.87"
+                        />
+                      </svg>
+                     </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 order-5 order-md-5">
+                <div class="card secondarycard flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h3 class="mb-3">
+                      <a class="text-dark" href="#">Get an AUSkey</a>
+                    </h3>
+                    <div class="lowdown">
+                      <p class="card-text">Already have and ABN and need an Administrator AUSkey for yourself or a business associate?</p>
+                      <a class="card-cta" href="#">Apply here
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18px" viewBox="0 0 21.68 11.76" class="cta-arrow">
+                          <polygon class="a" points="21.68 5.87 15.81 0 14.5 1.31 18.14 4.96 0 4.96 0 6.79 18.16 6.79 14.5 10.45 15.81 11.76 21.68 5.89 21.67 5.88 21.68 5.87"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="mb-5 homeH2">Help for your business</h2>
+          <div id="otherInfo" class="infoTiles">
+
+            <div class="row mb-2">
+              <div class="col-md-4">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h5 class="mb-4">Need to reactivate an old ABN?</h5>
+                    <p class="card-text mb-5">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Link to ABN Lookup</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h5 class="mb-4">Find out what licences and registrations you need</h5>
+                    <p class="card-text mb-5">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Licence wizard</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h5 class="mb-4">Need a step by step guide to starting a business?</h5>
+                    <p class="card-text mb-5">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Starting a business guide</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h5 class="mb-4">Need an additional AUSkey?</h5>
+                    <p class="card-text mb-5">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Additional AUSkeys</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h5 class="mb-4">Tools to help you start and grow</h5>
+                    <p class="card-text mb-5">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Templates and tools</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                  <div class="card-body">
+                    <h5 class="mb-4">Government grants are available for qualified applicants</h5>
+                    <p class="card-text mb-4">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#">Grants and assistance</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+
+
+</body>
+
+</html>

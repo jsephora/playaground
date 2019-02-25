@@ -1,0 +1,37 @@
+// Button styles
+
+.btn {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+// Primary button - use only once per page
+.btn-primary {
+    background: $bga-blue-tint1;
+    padding: .825rem 1.5rem;
+    border: 1px solid $bga-blue-tint1;
+    &:hover {
+        background: $bga-blue;
+    }
+}
+.btn-default {
+    color: $bga-blue;
+    background: transparent;
+    padding: .825rem 1.5rem;
+    border: 1px solid $bga-blue;
+    &:hover {
+        color: white;
+        background: $bga-blue;
+    }
+}
+.btn-cancel {
+    color: $bga-blue;
+    text-decoration: underline;
+    font-weight: 400;
+    border: 0;
+    background: transparent;
+    padding: 0.25rem;;
+    &:hover {
+        background: $bga-blue-tint3;
+        text-decoration: underline;
+    }
+}

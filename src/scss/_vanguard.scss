@@ -1,0 +1,50 @@
+body#sandbox {
+    color: #FFFFFF !important;
+    background-color: #1d5369;
+    background-image: radial-gradient(circle at 100% 0, #297b92, #134058 69%, #134058 100%, #134058);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    .navbar-dark {
+        background-color: #022C40;
+        height: 80px;
+    }
+    .footer {
+        background-color: #333333;
+    }
+    .btn-green {
+        background-color: #369a19;
+        border-radius: 35px;
+        border: 2px solid #ffffff;
+        color: #ffffff;
+        padding: 0.5rem 1.5rem;
+        &:hover {
+            background-color: #20640D;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+        }
+        &:focus {
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+            background-color: #20640D;
+            outline: 2px solid rgba(0, 226, 255, 0.5);
+            outline-offset: 2px;        
+        }
+        &:active {
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+            background-color: #20640D;
+            
+        }
+    }
+    input {
+        margin-right: 12px;
+        border-radius: 6px;
+        min-height: 3em;
+        border: none;
+        min-width: 24em;
+    }
+
+
+
+}
+
+

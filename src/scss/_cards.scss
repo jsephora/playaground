@@ -1,0 +1,141 @@
+// Cards
+.infoTiles {
+  .card {
+    box-shadow: 0 -4px 0 0 $bga-blue;
+    border-radius: 0;
+    border-top: 0;
+    background-color: $background-grey;
+    a {
+      display: inline-block;
+      &:before {
+        content: "";
+        display: inline-block;
+        background: url(../img/small-arrow-right.svg) no-repeat bottom left;
+        width: 12px;
+        height: 12px;
+        margin-right: 0.5rem;
+      }
+      &:hover {
+        &:before {
+          background: url(../img/small-arrow-right-hover.svg) no-repeat bottom left;
+        }
+      }
+    }
+  }
+}
+
+.actionTiles {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 4rem;
+  .primarycard,
+  .secondarycard {
+    min-height: 200px;
+    border: 0;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    transition: box-shadow .2s ease-in-out;
+    &:active {
+      -webkit-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+    }
+    .lowdown {
+      display: block;
+      position: absolute;
+      bottom: 1.250rem;
+      p {
+        margin: 0;
+        padding-right: 1.250rem;
+      }
+    }
+    .card-cta {
+      display: inline-block;
+      .cta-arrow {
+        fill: $link;
+        position: relative;
+        left: .25rem;
+        transition: left .3s ease-in-out
+      }
+      &:hover {
+        text-decoration: none;
+        .cta-arrow {
+          fill: $link-hover;
+          left: 0.625rem;
+        }
+      }
+    }
+  }
+  .primarycard {
+    border-top: 4px solid $bga-blue-tint1;
+  }
+  .secondarycard {
+    border-top: 4px solid $bga-yellow-tint1;
+  }
+}
+
+// Responsive (medium and up)
+@include media-breakpoint-up(md) {
+  .actionTiles {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 4rem;
+    .primarycard,
+    .secondarycard {
+      min-height: 275px;
+      border: 0;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+      transition: box-shadow .2s ease-in-out;
+      &:hover {
+        -webkit-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 6px 4px rgba(0, 0, 0, 0.15);
+      }
+      .card-cta {
+        display: inline-block;
+        .cta-arrow {
+          fill: $link;
+          position: relative;
+          left: .25rem;
+          transition: left .3s ease-in-out
+        }
+        &:hover {
+          text-decoration: none;
+          .cta-arrow {
+            fill: $link-hover;
+            left: 0.625rem;
+          }
+        }
+      }
+    }
+    .primarycard {
+      border-top: 4px solid $bga-blue-tint1;
+    }
+    .secondarycard {
+      border-top: 4px solid $bga-yellow-tint1;
+    }
+  }
+}
+// Responsive (large and up)
+@include media-breakpoint-up(lg) {
+  .actionTiles {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 4rem;
+    .primarycard,
+    .secondarycard {
+      min-height: 200px;
+    }
+  }
+}

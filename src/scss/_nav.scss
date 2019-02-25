@@ -1,0 +1,47 @@
+// Nav and Navbar
+#mobileNav {
+  .bga-navbar {
+    padding: 6px 15px;
+    background-color: $navy;
+    button.navbar-toggler[aria-expanded="true"] {
+      background-color: $bga-blue;
+    }
+  }
+  a.nav-link {
+    color: white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .bga-nav {
+    background-color: $bga-blue;
+  }
+  .navbar-toggler {
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 4px;
+    .icon {
+      vertical-align: middle;
+      font-size: 1rem;
+      padding-bottom: 6px;
+    }
+    .label {
+      display: block;
+      font-size: 12px;
+    }
+    &:focus {
+      border: 1px solid $bga-blue-tint1;
+    }
+    &:hover, &:active {
+      background-color: $bga-blue;
+    }
+  }
+}
+
+// Responsive (medium and up)
+@include media-breakpoint-up(md) {
+  #mobileNav {
+    display: none;
+  }
+}
